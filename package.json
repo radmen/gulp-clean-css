@@ -1,0 +1,34 @@
+{
+  "name": "gulp-clean-css",
+  "version": "0.0.1",
+  "description": "Minify files with CleanCSS",
+  "author": "Radosław Mejer <radmen@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "dependencies": {
+    "gulp-util": "~2.2.14",
+    "through2": "~0.4.0",
+    "clean-css": "~2.1.8",
+    "vinyl": "~0.2.3"
+  },
+  "devDependencies": {
+    "tape": "~2.4.2"
+  },
+  "engines": {
+    "node": ">= 0.9"
+  },
+  "keywords": [
+    "gulpplugin"
+  ],
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/radmen/gulp-clean-css/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radmen/gulp-clean-css.git"
+  }
+}
