@@ -1,4 +1,6 @@
 'use strict';
+// vim: ts=4 sw=4 noexpandtab
+
 var through = require('through2'),
     CleanCSS  = require('clean-css'),
     uglifyError = require('./lib/error.js');
@@ -20,7 +22,7 @@ module.exports = function() {
 		var mangled;
 
 		try {
-      mangled = new CleanCSS().minify(String(file.contents));
+			mangled = new CleanCSS().minify(String(file.contents));
 			file.contents = new Buffer(mangled);
 			this.push(file);
 		} catch (e) {
