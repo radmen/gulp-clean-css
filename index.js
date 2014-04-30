@@ -5,9 +5,9 @@ var through = require('through2'),
     CleanCSS  = require('clean-css'),
     uglifyError = require('./lib/error.js');
 
-module.exports = function() {
+module.exports = function(opt) {
 	
-	// if (!opt) opt = {};
+	if (!opt) opt = {};
 
 	function minify(file, encoding, callback) {
 		/*jshint validthis:true */
@@ -24,7 +24,7 @@ module.exports = function() {
 		var mangled;
 
 		try {
-			mangled = new CleanCSS(opt || {}).minify(String(file.contents));
+			mangled = new CleanCSS(opt).minify(String(file.contents));
 			file.contents = new Buffer(mangled);
 			this.push(file);
 		} catch (e) {
