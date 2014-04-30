@@ -24,7 +24,7 @@ module.exports = function() {
 		var mangled;
 
 		try {
-			mangled = new CleanCSS(opt || {}).minify(String(file.contents));
+			mangled = new CleanCSS().minify(String(file.contents));
 			file.contents = new Buffer(mangled);
 			this.push(file);
 		} catch (e) {
