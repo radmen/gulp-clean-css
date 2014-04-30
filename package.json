@@ -1,6 +1,6 @@
 {
   "name": "gulp-clean-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minify files with CleanCSS",
   "author": "Radosław Mejer <radmen@gmail.com>",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "tape": "~2.4.2"
   },
   "engines": {
-    "node": ">= 0.9"
+    "node": ">= 0.10"
   },
   "keywords": [
     "gulpplugin"
