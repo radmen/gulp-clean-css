@@ -2,6 +2,10 @@
 
 > Minify files with CleanCSS
 
+# DEPRECATED
+
+This package is marked as deprecated. Please use [jonathanepollack/gulp-minify-css](https://github.com/jonathanepollack/gulp-minify-css) instead.
+
 # Installation
 
 ```
